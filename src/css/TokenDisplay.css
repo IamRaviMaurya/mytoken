@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* To stack on smaller screens */
+}
+
+/* Desktop Token Display */
+.token-display {
+    background-color: #e6f3ff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    flex: 1;
+}
+
+.token-display p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.token-display h1 {
+    font-size: 4rem;
+    color: #003d73;
+    font-weight: bold;
+}
+
+/* Mobile Token Display */
+.mobile-display {
+    position: relative;
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    flex: 1;
+}
+
+.token-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.top-numbers .current {
+    font-weight: bold;
+    color: #003d73;
+}
+
+.token-number h2 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.token-number h1 {
+    font-size: 3rem;
+    color: #003d73;
+    margin-bottom: 10px;
+}
+
+.done-btn {
+    background-color: #003d73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    background-color: #005ea6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .token-display h1 {
+        font-size: 3rem;
+    }
+
+    .token-display p {
+        font-size: 1rem;
+    }
+
+    .mobile-display {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .token-display {
+        padding: 20px;
+    }
+
+    .token-display h1 {
+        font-size: 2.5rem;
+    }
+
+    .mobile-display {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .done-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
