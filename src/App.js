@@ -8,7 +8,7 @@ import UserTokenForm from "./components/UserTokenForm";
 
 function App() {
   return (
-<Router basename="/login">
+    <Router>
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
