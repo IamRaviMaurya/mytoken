@@ -42,7 +42,7 @@ const Signup = () => {
     };
 
     try {
-      const data = await signupUser(userData);
+      await signupUser(userData);
       setMessage("Signup successful!");
       setUserName("");
       setCategoryTitle("");
